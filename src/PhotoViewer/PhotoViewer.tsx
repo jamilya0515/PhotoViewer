@@ -6,7 +6,7 @@ export function PhotoViewer(props) {
         return <div> No Images </div>
     }
     return (                
-        <div className="picture-container">               
+        <div>             
             <img src={props.src}></img>
         </div>
     );

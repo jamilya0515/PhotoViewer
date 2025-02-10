@@ -1,4 +1,19 @@
 
-.picture-container {
-    border: 20px solid;
+.pictures-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 16px; 
+
+    li {
+        flex: 25%;
+        max-width: 25%;
+        object-fit: cover;
+    }
 }
+
+
+ul {
+    list-style-type: none;
+}
+
