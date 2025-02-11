@@ -12,20 +12,4 @@ export function PhotoViewer(props) {
     );
 }
 
-
-// function HelloWorld(props) {
-//     if (!props.name) {
-//     return <div>Hello World!</div>
-//     }
-//     return <div>Hello {props.name}</div>
-//    }
-
-// function App() {
-//     return (
-//     <main>
-//     <h1>Welcome to my App</h1>
-//     <HelloWorld name="Mike"/>
-//     </main>
-//     );
-//    }
    

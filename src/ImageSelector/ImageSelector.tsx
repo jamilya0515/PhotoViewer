@@ -1,26 +1,12 @@
 import React, { useState } from "react"
 import { PhotoViewer } from "../PhotoViewer/PhotoViewer"
 import './ImageSelector.css'
+import { imageUrls } from "./GetImageFunction"
 
 
 export function ImageSelector() {
-    const brokenImages = [
-        1, 24, 32, 36, 44, 47
-      ];
-      function getImageUrls() {
-          const urls = [];
-          for (let i = 0; i < 50; i++) {
-              if (!brokenImages.includes(i)) {
-                  const imageNumberString = i.toString().padStart(2, '0');
-                  urls.push(`https://picsum.photos/id/6${imageNumberString}/1600/900.jpg`)
-              }
-          }
-          return urls;
-      }
-    
-      const imageUrls = getImageUrls();
 
-      const imageList = imageUrls.map(url => <button key={url} onClick={() => changeImage(url)}><PhotoViewer src={url}/></button>);
+    const imageList = imageUrls.map(url => <button key={url} onClick={() => changeImage(url)}><PhotoViewer src={url}/></button>);
 
     const [selectImage, setSelectImage] = useState('https://picsum.photos/200/300?random=2');
 

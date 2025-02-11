@@ -1,9 +1,10 @@
 .pictures-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 4px;
     list-style-type: none;
     padding: 0px; 
+
 
     button {
         border: none;
@@ -16,15 +17,24 @@
         max-height: 40px;
         object-fit: cover;
       }
+    
+    button img:hover {
+    box-shadow: 0 0 2px 1px black;
+    }
+}
 
-    .selected-image{
+.selected-image{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     }
-      
+
+
+.selected-image img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+
 }
-
-
 
