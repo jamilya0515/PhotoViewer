@@ -1,39 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import { PhotoViewer } from './PhotoViewer/PhotoViewer'
 import { ImageSelector } from './ImageSelector/ImageSelector'
 
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // const imgUrls = ["https://picsum.photos/id/600/600/400.jpg", "https://picsum.photos/600/400?random=1","https://picsum.photos/600/400?random=2", "https://picsum.photos/600/400?random=3","https://picsum.photos/600/400?random=4" ]
-  // const imageList = imgUrls.map(url => `<li><PhotoViewer src=${url}/></li>`);
-  // const items = []
-  // for (let i=0; i<imageList.length; i++) {
-  //   items.push(<li key={i}>{imageList[i]}</li>);
-  // }
 
+
+  
   return (
   
     <>
     <div>
-          <h1>React Photo Viewer</h1>
-          <ul className="pictures-container">
-            {/* <ul>{items}</ul>; */}
-            
-            <li><PhotoViewer src={"https://picsum.photos/id/600/600/400.jpg"}/></li>
-            <li><PhotoViewer src={"https://picsum.photos/600/400?random=1"}/></li>
-            <li><PhotoViewer src={"https://picsum.photos/600/400?random=2"}/></li>
-            <li><PhotoViewer src={"https://picsum.photos/600/400?random=3"}/></li>
-            <li><PhotoViewer src={"https://picsum.photos/600/400?random=4"}/></li> 
-          </ul>
+      <h1>React Photo Viewer</h1>
+      
+      <div>
+        <ImageSelector/>
+      </div>
 
-          <div>
-            <h2>Select your photo</h2>
-           <ImageSelector/>
-          </div>
+      
 
     </div>
       {/* <div>
@@ -61,3 +48,4 @@ function App() {
 }
 
 export default App
+
